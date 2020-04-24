@@ -80,12 +80,12 @@
             this.Controls.Add(this.textBoxCWID);
             this.Controls.Add(this.labelCWID);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "formCWID";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CWID";
+            this.Load += new System.EventHandler(this.formCWID_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

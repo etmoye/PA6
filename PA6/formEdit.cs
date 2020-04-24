@@ -12,13 +12,15 @@ namespace PA6
 {
     public partial class formEdit : Form
     {
+        //create fields
         private Book myBook;
         private string cwid;
         private string mode;
 
         public formEdit(Object tempBook, string tempMode, string tempCwid)
         {
-            myBook = (Book)tempBook;
+
+            myBook = (Book)tempBook; //cast
             cwid = tempCwid;
             mode = tempMode;
             InitializeComponent();

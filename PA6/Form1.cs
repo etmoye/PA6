@@ -24,8 +24,11 @@ namespace PA6
 
         private void buttonOK_Click(object sender, EventArgs e)
         {
+            //hide CWID form
             this.Hide();
-            formMain showMain = new formMain(textBoxCWID.Text);
+
+            //open the main form and pass the cwid in
+            formMain showMain = new formMain(textBoxCWID.Text); 
             if(showMain.ShowDialog() == DialogResult.OK)
             {
 
@@ -34,6 +37,11 @@ namespace PA6
             {
                 this.Close();
             }
+        }
+
+        private void formCWID_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

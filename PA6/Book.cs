@@ -8,6 +8,8 @@ namespace PA6
 {
     class Book
     {
+
+
         public String cwid { get; set; }
         public String isbn { get; set; }
         public String title { get; set; }
@@ -19,7 +21,7 @@ namespace PA6
         public int copies { get; set; }
         public String _id { get; set; }
 
-
+        //constructor
         public Book(string cwid, string isbn, string title, string author, string cover, string genre, int length, int copies, string id)
         {
             this.cwid = cwid;
